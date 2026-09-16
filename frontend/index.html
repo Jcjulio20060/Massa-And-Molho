@@ -3,51 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Massa & Molho - Receitas de massas e molhos deliciosos.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Massa & Molho - O cardápio de casa: escolha sua pizza, siga a receita ou peça em poucos toques.">
     <link rel="icon" href="assets/favicon/pizza.png" type="image/x-icon">
-    <title>Massa & Molho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..900,0..100,0..1&family=Karla:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Massa &amp; Molho · O Cardápio de Casa</title>
 </head>
 <body>
-    <header>
-        <div class="header-title">
-            <img src="assets/logo/massa&molho-logo.png" alt="Logo Massa & Molho" width="100">
-            <h1>Massa & Molho</h1>
+    <a class="skip-link" href="#receitas">Ir para o cardápio</a>
+
+    <header class="masthead">
+        <div class="brand">
+            <img src="assets/logo/massa&molho-logo.png" class="brand-logo" alt="" width="56" height="56">
+            <span class="brand-text">
+                <span class="brand-name">Massa &amp; Molho</span>
+                <span class="brand-tag">forno a lenha · desde sempre</span>
+            </span>
         </div>
-        <ul>
-            <li><a href="#receitas">Receitas</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+        <nav class="nav" aria-label="Seções do cardápio">
+            <ul>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h2 id="receitas">Receitas</h2>
-        <p> Deliciosas receitas de pizzas.</p>
-        <div id="recipes-container"></div>
+
+    <main class="sheet" id="main">
+        <div class="sheet-head">
+            <p class="eyebrow">O cardápio de casa</p>
+            <h1 class="sheet-title">Escolha a sua pizza.<br>Cozinhe ou peça.</h1>
+            <p class="sheet-lead">Cada receita vem com ingredientes, tempo e modo de preparo. Se a fome não espera, peça a mesma pizza direto da nossa cozinha.</p>
+            <p class="sheet-stamps">
+                <span class="stamp stamp--tomato">8 receitas</span>
+                <span class="stamp stamp--basil">forno a 280°C</span>
+                <span class="stamp">entrega na região</span>
+            </p>
+        </div>
+
+        <div class="sheet-divider" role="presentation">
+            <span class="sheet-divider-dot"></span>
+            <span class="sheet-divider-dot"></span>
+            <span class="sheet-divider-dot"></span>
+        </div>
+
+        <div id="recipes-container" class="recipes" aria-live="polite" aria-busy="true"></div>
+        <p id="recipes-status" class="recipes-status" role="status"></p>
     </main>
 
-    <div class="modal" id="recipe-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
-        <div class="modal-content">
-            <div class="modal-header">
-                <img src="" alt="" class="modal-image" id="modal-image">
-                <button class="modal-close" id="modal-close" type="button" aria-label="Fechar detalhes">&times;</button>
-            </div>
-            <div class="modal-info">
-                <h2 id="modal-title"></h2>
-                <p id="modal-description"></p>
-                <div class="modal-details">
-                    <p><strong>Tempo:</strong> <span id="modal-time"></span></p>
-                    <p><strong>Dificuldade:</strong> <span id="modal-difficulty"></span></p>
-                    <p><strong>Rendimento:</strong> <span id="modal-yield"></span></p>
-                </div>
-                <h3>Ingredientes</h3>
-                <ul id="modal-ingredients"></ul>
-                <h3>Modo de preparo</h3>
-                <ol id="modal-preparation"></ol>
-            </div>
+    <section class="about" id="sobre" aria-labelledby="sobre-title">
+        <div class="about-inner">
+            <p class="eyebrow">Sobre a casa</p>
+            <h2 id="sobre-title">Receita e balcão na mesma página.</h2>
+            <p>A gente acredita que escolher uma pizza é meio caminho do prazer. Por isso o cardápio mostra tudo: como ela é feita e quanto custa. Você decide se vai colocar a mão na massa ou deixar com a gente.</p>
+        </div>
+    </section>
+
+    <footer class="footer" id="contato">
+        <div class="footer-inner">
+            <p class="footer-brand">Massa &amp; Molho</p>
+            <p class="footer-line">Rua do Forno, 42 · Terça a domingo, 18h às 23h30</p>
+            <p class="footer-line"><a href="tel:+551140028922">(11) 4002-8922</a> · <a href="https://wa.me/5511940028922">pedir pelo WhatsApp</a></p>
+            <p class="footer-fine">Projeto de estudo · cardápio e receitas ilustrados à mão.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="recipe-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content" role="document" tabindex="-1">
+            <button class="modal-close" id="modal-close" type="button" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div id="modal-body"></div>
         </div>
     </div>
 
+    <noscript>
+        <p class="noscript">Este cardápio precisa de JavaScript para carregar as receitas e o pedido.</p>
+    </noscript>
+
+    <script src="js/illustrations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,18 +1,29 @@
 # Frontend - Massa & Molho
 
-Interface web do Massa & Molho, um catálogo de receitas e opções de cardápio de pizzas.
+Interface web do Massa & Molho, um catálogo de receitas e cardápio de pizzas com pedido integrado.
 
 ## Status atual
 
-O frontend está na etapa inicial de estruturação. A página principal já possui metadados básicos, favicon e referência ao arquivo de estilos, enquanto a interface visual e os scripts de interação ainda serão desenvolvidos.
+O frontend está funcional e sem framework:
+
+- lista as pizzas de `../backend/pizzas.json` em uma grade de cards;
+- abre um modal acessível com ingredientes, modo de preparo e preços;
+- **Iniciar preparo**: modo cozinha com cronômetro baseado em `tempoPreparoMinutos` e passo a passo navegável;
+- **Pedir pizza**: escolha de tamanho e borda, com total calculado e confirmação do pedido (simulada no frontend).
 
 ## Tecnologias
 
 - HTML5
 - CSS3
-- JavaScript vanilla (a implementar)
+- JavaScript vanilla (sem build)
 
-Não há dependências ou gerenciador de pacotes configurados atualmente.
+### Fontes
+
+A identidade usa fontes do Google Fonts, carregadas em `index.html`:
+
+- **Fraunces** (display);
+- **Newsreader** (texto corrido);
+- **Karla** (dados, selos e rótulos).
 
 ## Estrutura
 
@@ -24,29 +35,35 @@ frontend/
 ├── css/
 │   └── style.css
 ├── js/
-└── index.html
+│   ├── illustrations.js   # SVGs desenhados à mão por pizza
+│   └── main.js            # render, modal, preparo e pedido
+├── index.html
+└── README.md
 ```
 
 ## Executar localmente
 
-A partir da raiz do projeto, inicie um servidor HTTP simples:
+A partir da **raiz do projeto**, inicie um servidor HTTP simples:
 
 ```bash
-python3 -m http.server 8000 --directory frontend
+python3 -m http.server 8000
 ```
 
-Depois, acesse [http://localhost:8000](http://localhost:8000).
+Depois, acesse [http://localhost:8000/frontend/](http://localhost:8000/frontend/).
 
-Para visualizar apenas a estrutura atual, também é possível abrir `index.html` diretamente no navegador. O servidor local é a opção recomendada para as próximas integrações com dados e scripts.
+O servidor precisa rodar na raiz porque o script busca `../backend/pizzas.json`. Abrir o `index.html` direto no navegador não carrega o JSON por restrição de arquivos locais.
 
 ## Dados
 
-O catálogo inicial está em [`../backend/pizzas.json`](../backend/pizzas.json). Ele ainda não é consumido automaticamente pelo frontend; a integração será adicionada junto com a camada JavaScript ou uma API.
+O catálogo está em [`../backend/pizzas.json`](../backend/pizzas.json). Cada pizza aponta para uma ilustração pelo campo `ilustracao`, que corresponde a uma função em `js/illustrations.js`. Para adicionar uma pizza:
+
+1. inclua um objeto no JSON com um `ilustracao` existente (ou crie um novo SVG na biblioteca);
+2. mantenha `receita` e `cardapioPizzaria` preenchidos.
 
 ## Diretrizes de desenvolvimento
 
 - manter a estrutura sem framework enquanto ela atender ao projeto;
 - separar marcação, estilos e comportamento em seus diretórios;
-- priorizar layout responsivo para celular e desktop;
-- reutilizar as variáveis de cor já definidas em `css/style.css`;
-- evitar adicionar dependências sem atualizar a documentação e a configuração do projeto.
+- priorizar layout responsivo e acessibilidade (foco visível, `aria-modal`, trap de foco, respeito a `prefers-reduced-motion`);
+- reutilizar as variáveis de cor e tipografia definidas em `css/style.css`;
+- atualizar esta documentação ao adicionar dependências.

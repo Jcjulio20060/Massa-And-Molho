@@ -1,79 +1,158 @@
 [
   {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
+    "id": "pizza-margherita",
+    "slug": "pizza-margherita",
+    "nome": "Pizza Margherita",
+    "descricao": "Molho de tomate San Marzano, muçarela de búfala, folhas de manjericão fresco e um fio de azeite extravirgem.",
+    "ilustracao": "margherita",
     "categoria": "Tradicional",
     "disponivelParaEntrega": true,
-
+    "receita": {
+      "tempoPreparoMinutos": 40,
+      "dificuldade": "Fácil",
+      "rendimento": "1 pizza grande (8 fatias)",
+      "caloriasAprox": 280,
+      "ingredientes": [
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate San Marzano", "quantidade": 120, "unidade": "g" },
+        { "nome": "Muçarela de búfala", "quantidade": 180, "unidade": "g" },
+        { "nome": "Folhas de manjericão fresco", "quantidade": 12, "unidade": "un" },
+        { "nome": "Azeite extravirgem", "quantidade": 1, "unidade": "fio" }
+      ],
+      "modoDePreparo": [
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por pelo menos 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa, espalhe o molho de tomate e deixe 1 cm de borda." },
+        { "passo": 3, "titulo": "Adicionar a muçarela", "instrucao": "Distribua a muçarela de búfala em porções generosas." },
+        { "passo": 4, "titulo": "Assar", "instrucao": "Asse por 10 a 12 minutos até a borda dourar." },
+        { "passo": 5, "titulo": "Finalizar", "instrucao": "Ao sair do forno, acrescente o manjericão fresco e regue com azeite." }
+      ]
+    },
+    "cardapioPizzaria": {
+      "precos": [
+        { "tamanho": "Média", "fatias": 6, "preco": 39.90 },
+        { "tamanho": "Grande", "fatias": 8, "preco": 49.90 },
+        { "tamanho": "Família", "fatias": 12, "preco": 62.90 }
+      ],
+      "opcoesBorda": [
+        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
+        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
+        { "nome": "Cheddar", "precoAdicional": 8.00 }
+      ]
+    }
+  },
+  {
+    "id": "pizza-calabresa",
+    "slug": "pizza-calabresa",
+    "nome": "Pizza Calabresa",
+    "descricao": "Fatias de calabresa artesanal, cebola roxa em tiras, muçarela e orégano oregano da casa.",
+    "ilustracao": "calabresa",
+    "categoria": "Tradicional",
+    "disponivelParaEntrega": true,
+    "receita": {
+      "tempoPreparoMinutos": 45,
+      "dificuldade": "Média",
+      "rendimento": "1 pizza grande (8 fatias)",
+      "caloriasAprox": 420,
+      "ingredientes": [
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate caseiro", "quantidade": 150, "unidade": "g" },
+        { "nome": "Muçarela ralada", "quantidade": 200, "unidade": "g" },
+        { "nome": "Calabresa artesanal", "quantidade": 150, "unidade": "g" },
+        { "nome": "Cebola roxa", "quantidade": 1, "unidade": "un" },
+        { "nome": "Orégano seco", "quantidade": 1, "unidade": "pitada" }
+      ],
+      "modoDePreparo": [
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por pelo menos 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa e espalhe o molho de tomate uniformemente." },
+        { "passo": 3, "titulo": "Cobrir com queijo", "instrucao": "Cubra com a muçarela e distribua a calabresa em fatias." },
+        { "passo": 4, "titulo": "Adicionar a cebola", "instrucao": "Espalhe as tiras de cebola roxa e o orégano." },
+        { "passo": 5, "titulo": "Assar", "instrucao": "Asse por 12 a 15 minutos até a borda dourar." }
+      ]
+    },
+    "cardapioPizzaria": {
+      "precos": [
+        { "tamanho": "Média", "fatias": 6, "preco": 41.90 },
+        { "tamanho": "Grande", "fatias": 8, "preco": 52.90 },
+        { "tamanho": "Família", "fatias": 12, "preco": 66.90 }
+      ],
+      "opcoesBorda": [
+        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
+        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
+        { "nome": "Cheddar", "precoAdicional": 8.00 }
+      ]
+    }
+  },
+  {
+    "id": "pizza-portuguesa",
+    "slug": "pizza-portuguesa",
+    "nome": "Pizza Portuguesa",
+    "descricao": "Presunto, ovos, azeitonas verdes, cebola e muçarela sobre molho de tomate artesanal.",
+    "ilustracao": "portuguesa",
+    "categoria": "Tradicional",
+    "disponivelParaEntrega": true,
+    "receita": {
+      "tempoPreparoMinutos": 50,
+      "dificuldade": "Média",
+      "rendimento": "1 pizza grande (8 fatias)",
+      "caloriasAprox": 430,
+      "ingredientes": [
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate caseiro", "quantidade": 150, "unidade": "g" },
+        { "nome": "Muçarela ralada", "quantidade": 200, "unidade": "g" },
+        { "nome": "Presunto", "quantidade": 120, "unidade": "g" },
+        { "nome": "Ovos", "quantidade": 2, "unidade": "un" },
+        { "nome": "Azeitonas verdes", "quantidade": 80, "unidade": "g" },
+        { "nome": "Cebola", "quantidade": 1, "unidade": "un" }
+      ],
+      "modoDePreparo": [
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa e espalhe o molho de tomate." },
+        { "passo": 3, "titulo": "Cobrir com queijo e presunto", "instrucao": "Distribua a muçarela, o presunto e rodelas de cebola." },
+        { "passo": 4, "titulo": "Adicionar ovos e azeitonas", "instrucao": "Quebre os ovos sobre a pizza e espalhe as azeitonas." },
+        { "passo": 5, "titulo": "Assar", "instrucao": "Asse por 14 a 16 minutos até os ovos firmarem." }
+      ]
+    },
+    "cardapioPizzaria": {
+      "precos": [
+        { "tamanho": "Média", "fatias": 6, "preco": 44.90 },
+        { "tamanho": "Grande", "fatias": 8, "preco": 55.90 },
+        { "tamanho": "Família", "fatias": 12, "preco": 69.90 }
+      ],
+      "opcoesBorda": [
+        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
+        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
+        { "nome": "Cheddar", "precoAdicional": 8.00 }
+      ]
+    }
+  },
+  {
+    "id": "pizza-quatro-queijos",
+    "slug": "pizza-quatro-queijos",
+    "nome": "Pizza 4 Queijos Especial",
+    "descricao": "Muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
+    "ilustracao": "quatroqueijos",
+    "categoria": "Tradicional",
+    "disponivelParaEntrega": true,
     "receita": {
       "tempoPreparoMinutos": 45,
       "dificuldade": "Média",
       "rendimento": "1 pizza grande (8 fatias)",
       "caloriasAprox": 320,
       "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate caseiro", "quantidade": 150, "unidade": "g" },
+        { "nome": "Queijo muçarela ralado", "quantidade": 200, "unidade": "g" },
+        { "nome": "Queijo gorgonzola esfarelado", "quantidade": 80, "unidade": "g" },
+        { "nome": "Requeijão tipo catupiry", "quantidade": 100, "unidade": "g" },
+        { "nome": "Queijo parmesão ralado", "quantidade": 50, "unidade": "g" }
       ],
       "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa e espalhe o molho de tomate." },
+        { "passo": 3, "titulo": "Adicionar os queijos", "instrucao": "Distribua a muçarela, o gorgonzola, o catupiry e finalize com parmesão." },
+        { "passo": 4, "titulo": "Assar", "instrucao": "Asse por 12 a 15 minutos até derreter completamente." }
       ]
     },
-
     "cardapioPizzaria": {
       "precos": [
         { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
@@ -88,83 +167,79 @@
     }
   },
   {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
+    "id": "pizza-pepperoni",
+    "slug": "pizza-pepperoni",
+    "nome": "Pizza Pepperoni Picante",
+    "descricao": "Pepperoni defumado e levemente picante, muçarela e mel de pimenta para finalizar.",
+    "ilustracao": "pepperoni",
+    "categoria": "Especial",
     "disponivelParaEntrega": true,
-
     "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
+      "tempoPreparoMinutos": 40,
+      "dificuldade": "Fácil",
       "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
+      "caloriasAprox": 450,
       "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate caseiro", "quantidade": 150, "unidade": "g" },
+        { "nome": "Muçarela ralada", "quantidade": 200, "unidade": "g" },
+        { "nome": "Pepperoni", "quantidade": 120, "unidade": "g" },
+        { "nome": "Mel de pimenta", "quantidade": 1, "unidade": "fio" }
       ],
       "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa e espalhe o molho de tomate." },
+        { "passo": 3, "titulo": "Cobrir e distribuir o pepperoni", "instrucao": "Cubra com a muçarela e distribua as fatias de pepperoni." },
+        { "passo": 4, "titulo": "Assar", "instrucao": "Asse por 10 a 12 minutos até as bordas abrirem." },
+        { "passo": 5, "titulo": "Finalizar", "instrucao": "Regue com mel de pimenta ao sair do forno." }
       ]
     },
-
     "cardapioPizzaria": {
       "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
+        { "tamanho": "Média", "fatias": 6, "preco": 45.90 },
+        { "tamanho": "Grande", "fatias": 8, "preco": 57.90 },
+        { "tamanho": "Família", "fatias": 12, "preco": 71.90 }
+      ],
+      "opcoesBorda": [
+        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
+        { "nome": "Catupiry Original", "precoAdicional": 9.00 },
+        { "nome": "Cheddar", "precoAdicional": 9.00 }
+      ]
+    }
+  },
+  {
+    "id": "pizza-vegetariana",
+    "slug": "pizza-vegetariana",
+    "nome": "Pizza Vegetariana do Forno",
+    "descricao": "Pimentões coloridos, cogumelos, tomate-cereja e manjericão sobre muçarela.",
+    "ilustracao": "vegetariana",
+    "categoria": "Especial",
+    "disponivelParaEntrega": true,
+    "receita": {
+      "tempoPreparoMinutos": 40,
+      "dificuldade": "Fácil",
+      "rendimento": "1 pizza grande (8 fatias)",
+      "caloriasAprox": 260,
+      "ingredientes": [
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate caseiro", "quantidade": 150, "unidade": "g" },
+        { "nome": "Muçarela ralada", "quantidade": 180, "unidade": "g" },
+        { "nome": "Pimentão verde e vermelho", "quantidade": 1, "unidade": "un" },
+        { "nome": "Cogumelos frescos", "quantidade": 100, "unidade": "g" },
+        { "nome": "Tomate-cereja", "quantidade": 8, "unidade": "un" },
+        { "nome": "Manjericão fresco", "quantidade": 6, "unidade": "folhas" }
+      ],
+      "modoDePreparo": [
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa e espalhe o molho de tomate." },
+        { "passo": 3, "titulo": "Cobrir com os legumes", "instrucao": "Cubra com a muçarela e distribua pimentões, cogumelos e tomates-cereja." },
+        { "passo": 4, "titulo": "Assar", "instrucao": "Asse por 12 a 14 minutos." },
+        { "passo": 5, "titulo": "Finalizar", "instrucao": "Finalize com folhas de manjericão fresco." }
+      ]
+    },
+    "cardapioPizzaria": {
+      "precos": [
+        { "tamanho": "Média", "fatias": 6, "preco": 43.90 },
         { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
         { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
       ],
@@ -176,85 +251,40 @@
     }
   },
   {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
+    "id": "pizza-frango-catupiry",
+    "slug": "pizza-frango-com-catupiry",
+    "nome": "Pizza Frango com Catupiry",
+    "descricao": "Frango desfiado temperado, catupiry cremoso e milho verde, finalizada com parmesão.",
+    "ilustracao": "frango",
     "categoria": "Tradicional",
     "disponivelParaEntrega": true,
-
     "receita": {
-      "tempoPreparoMinutos": 45,
+      "tempoPreparoMinutos": 50,
       "dificuldade": "Média",
       "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
+      "caloriasAprox": 390,
       "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
+        { "nome": "Massa para pizza artesanal", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Molho de tomate caseiro", "quantidade": 150, "unidade": "g" },
+        { "nome": "Frango desfiado temperado", "quantidade": 200, "unidade": "g" },
+        { "nome": "Requeijão tipo catupiry", "quantidade": 150, "unidade": "g" },
+        { "nome": "Milho verde", "quantidade": 50, "unidade": "g" },
+        { "nome": "Muçarela ralada", "quantidade": 150, "unidade": "g" },
+        { "nome": "Parmesão ralado", "quantidade": 40, "unidade": "g" }
       ],
       "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno na temperatura máxima por 20 minutos." },
+        { "passo": 2, "titulo": "Montar a base", "instrucao": "Abra a massa e espalhe o molho de tomate." },
+        { "passo": 3, "titulo": "Cobrir com frango e queijo", "instrucao": "Cubra com a muçarela e distribua o frango desfiado." },
+        { "passo": 4, "titulo": "Adicionar catupiry e milho", "instrucao": "Espalhe o catupiry em colheradas e acrescente o milho." },
+        { "passo": 5, "titulo": "Assar", "instrucao": "Asse por 14 a 16 minutos e finalize com parmesão." }
       ]
     },
-
     "cardapioPizzaria": {
       "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
+        { "tamanho": "Média", "fatias": 6, "preco": 46.90 },
+        { "tamanho": "Grande", "fatias": 8, "preco": 58.90 },
+        { "tamanho": "Família", "fatias": 12, "preco": 73.90 }
       ],
       "opcoesBorda": [
         { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
@@ -264,529 +294,41 @@
     }
   },
   {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
+    "id": "pizza-brigadeiro",
+    "slug": "pizza-doce-brigadeiro",
+    "nome": "Pizza Doce Brigadeiro",
+    "descricao": "Base assada de chocolate, brigadeiro cremoso, granulado e morangos frescos.",
+    "ilustracao": "brigadeiro",
+    "categoria": "Doce",
     "disponivelParaEntrega": true,
-
     "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
-      "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
+      "tempoPreparoMinutos": 35,
+      "dificuldade": "Fácil",
+      "rendimento": "1 pizza doce (8 fatias)",
+      "caloriasAprox": 460,
       "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
+        { "nome": "Massa para pizza artesanal doce", "quantidade": 1, "unidade": "disco (35cm)" },
+        { "nome": "Chocolate meio amargo", "quantidade": 80, "unidade": "g" },
+        { "nome": "Leite condensado", "quantidade": 1, "unidade": "lata" },
+        { "nome": "Granulado", "quantidade": 60, "unidade": "g" },
+        { "nome": "Morangos frescos", "quantidade": 8, "unidade": "un" }
       ],
       "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
+        { "passo": 1, "titulo": "Preaquecer o forno", "instrucao": "Preaqueça o forno a 220°C." },
+        { "passo": 2, "titulo": "Preparar a base", "instrucao": "Espalhe o chocolate derretido sobre o disco e asse por 8 minutos." },
+        { "passo": 3, "titulo": "Cobrir com brigadeiro", "instrucao": "Espalhe o brigadeiro cremoso sobre a base assada." },
+        { "passo": 4, "titulo": "Finalizar", "instrucao": "Cubra com granulado e decore com os morangos." }
       ]
     },
-
     "cardapioPizzaria": {
       "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
+        { "tamanho": "Média", "fatias": 6, "preco": 38.90 },
+        { "tamanho": "Grande", "fatias": 8, "preco": 47.90 },
+        { "tamanho": "Família", "fatias": 12, "preco": 59.90 }
       ],
       "opcoesBorda": [
         { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
-        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
-        { "nome": "Cheddar", "precoAdicional": 8.00 }
-      ]
-    }
-  },
-  {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
-    "disponivelParaEntrega": true,
-
-    "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
-      "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
-      "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
-      ],
-      "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
-      ]
-    },
-
-    "cardapioPizzaria": {
-      "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
-      ],
-      "opcoesBorda": [
-        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
-        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
-        { "nome": "Cheddar", "precoAdicional": 8.00 }
-      ]
-    }
-  },
-  {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
-    "disponivelParaEntrega": true,
-
-    "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
-      "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
-      "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
-      ],
-      "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
-      ]
-    },
-
-    "cardapioPizzaria": {
-      "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
-      ],
-      "opcoesBorda": [
-        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
-        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
-        { "nome": "Cheddar", "precoAdicional": 8.00 }
-      ]
-    }
-  },
-  {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
-    "disponivelParaEntrega": true,
-
-    "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
-      "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
-      "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
-      ],
-      "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
-      ]
-    },
-
-    "cardapioPizzaria": {
-      "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
-      ],
-      "opcoesBorda": [
-        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
-        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
-        { "nome": "Cheddar", "precoAdicional": 8.00 }
-      ]
-    }
-  },
-  {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
-    "disponivelParaEntrega": true,
-
-    "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
-      "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
-      "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
-      ],
-      "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
-      ]
-    },
-
-    "cardapioPizzaria": {
-      "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
-      ],
-      "opcoesBorda": [
-        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
-        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
-        { "nome": "Cheddar", "precoAdicional": 8.00 }
-      ]
-    }
-  },
-  {
-    "id": "pizza-4-queijos",
-    "slug": "pizza-quatro-queijos",
-    "nome": "Pizza 4 Queijos Especial",
-    "descricao": "Combinação cremosa de muçarela, gorgonzola, parmesão e catupiry sobre molho de tomate artesanal.",
-    "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg",
-    "categoria": "Tradicional",
-    "disponivelParaEntrega": true,
-
-    "receita": {
-      "tempoPreparoMinutos": 45,
-      "dificuldade": "Média",
-      "rendimento": "1 pizza grande (8 fatias)",
-      "caloriasAprox": 320,
-      "ingredientes": [
-        {
-          "nome": "Massa para pizza artesanal",
-          "quantidade": 1,
-          "unidade": "disco (35cm)"
-        },
-        {
-          "nome": "Molho de tomate caseiro",
-          "quantidade": 150,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Muçarela ralado",
-          "quantidade": 200,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Gorgonzola esfarelado",
-          "quantidade": 80,
-          "unidade": "g"
-        },
-        {
-          "nome": "Requeijão tipo Catupiry",
-          "quantidade": 100,
-          "unidade": "g"
-        },
-        {
-          "nome": "Queijo Parmesão ralado",
-          "quantidade": 50,
-          "unidade": "g"
-        },
-        {
-          "nome": "Orégano seco",
-          "quantidade": 1,
-          "unidade": "pitada"
-        }
-      ],
-      "modoDePreparo": [
-        {
-          "passo": 1,
-          "titulo": "Preaquecer o forno",
-          "instrucao": "Preaqueça o forno na temperatura máxima (250°C a 280°C) por pelo menos 20 minutos."
-        },
-        {
-          "passo": 2,
-          "titulo": "Montar a base",
-          "instrucao": "Abra a massa em uma assadeira e espalhe o molho de tomate uniformemente, deixando 1 cm de borda."
-        },
-        {
-          "passo": 3,
-          "titulo": "Adicionar os queijos",
-          "instrucao": "Distribua a muçarela, espalhe pequenas porções de gorgonzola e catupiry, e finalize polvilhando o parmesão."
-        },
-        {
-          "passo": 4,
-          "titulo": "Assar",
-          "instrucao": "Leve ao forno por 12 a 15 minutos ou até as bordas dourarem e o queijo derreter completamente."
-        }
-      ]
-    },
-
-    "cardapioPizzaria": {
-      "precos": [
-        { "tamanho": "Média", "fatias": 6, "preco": 42.90 },
-        { "tamanho": "Grande", "fatias": 8, "preco": 54.90 },
-        { "tamanho": "Família", "fatias": 12, "preco": 68.90 }
-      ],
-      "opcoesBorda": [
-        { "nome": "Sem Borda Recheada", "precoAdicional": 0.00 },
-        { "nome": "Catupiry Original", "precoAdicional": 8.00 },
+        { "nome": "Chocolate", "precoAdicional": 9.00 },
         { "nome": "Cheddar", "precoAdicional": 8.00 }
       ]
     }
