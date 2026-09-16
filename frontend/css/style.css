@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* Reset dos Estilos Globais */
+
+:root {
+    --primary-color: #C83E2B; /* Terracota / Vermelho Pizzaria */
+    /* Uso: Botão "Pedir Pizza", destaques de preço e header. */
+    --secondary-color: #2E6F40; /* Verde Manjericão / Oliva */
+    /* Uso: Botão "Iniciar Preparo", ícones de tempo de cozimento e badges de receitas. */
+    --background-color: #FDFBF7; /* Creme / Off-White */
+    /* Uso: Fundo da aplicação, dando uma sensação de papel de livro de receitas artesanal. */
+    --text-color: #fff; /* Branco Puro */
+    /* Uso: Card de ingredientes e modal de checkout. */
+    --card-color: #222222; /* Grafite Escuro */
+    /* Uso: Textos longos e modo de preparo (melhor legibilidade que o preto puro). */
+}
+
