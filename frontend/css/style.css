@@ -11,9 +11,201 @@
     /* Uso: Botão "Iniciar Preparo", ícones de tempo de cozimento e badges de receitas. */
     --background-color: #FDFBF7; /* Creme / Off-White */
     /* Uso: Fundo da aplicação, dando uma sensação de papel de livro de receitas artesanal. */
-    --text-color: #fff; /* Branco Puro */
+    --card-color: #fff; /* Branco Puro */
     /* Uso: Card de ingredientes e modal de checkout. */
-    --card-color: #222222; /* Grafite Escuro */
+    --text-color: #222222; /* Grafite Escuro */
     /* Uso: Textos longos e modo de preparo (melhor legibilidade que o preto puro). */
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--card-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin: 20px 0;
+    border-radius: 16px;
+}
+
+header > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+header > ul > li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 700px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+#recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.recipe-button {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 8px;
+    color: var(--card-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 10px 16px;
+}
+
+.recipe-button:hover,
+.recipe-button:focus-visible {
+    background-color: #a83223;
+}
+
+.modal {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    inset: 0;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+.modal.is-open {
+    display: flex;
+}
+
+.modal-header {
+    position: relative;
+    margin: 0 auto 20px;
+    max-width: 100%;
+}
+
+.modal-content {
+    background-color: var(--card-color);
+    border-radius: 16px;
+    max-height: 90vh;
+    max-width: 600px;
+    overflow-y: auto;
+    padding: 32px;
+    position: relative;
+    width: 100%;
+}
+
+.modal-close {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    border: 0;
+    color: var(--card-color);
+    cursor: pointer;
+    font-size: 32px;
+    height: 40px;
+    line-height: 1;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 40px;
+    z-index: 1;
+}
+
+.modal-image {
+    display: block;
+    height: 260px;
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.modal-content h2 {
+    margin-bottom: 12px;
+    padding-right: 32px;
+}
+
+.modal-content h3 {
+    margin: 24px 0 8px;
+}
+
+.modal-details {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    display: grid;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 16px 0;
+}
+
+.modal-content ul,
+.modal-content ol {
+    padding-left: 24px;
+}
+
+.modal-content li + li {
+    margin-top: 8px;
+}
+
+@media (max-width: 740px) {
+    header,
+    main {
+        width: calc(100% - 32px);
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .modal-content {
+        padding: 24px;
+    }
+}

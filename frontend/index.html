@@ -9,6 +9,45 @@
     <title>Massa & Molho</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-title">
+            <img src="assets/logo/massa&molho-logo.png" alt="Logo Massa & Molho" width="100">
+            <h1>Massa & Molho</h1>
+        </div>
+        <ul>
+            <li><a href="#receitas">Receitas</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2 id="receitas">Receitas</h2>
+        <p> Deliciosas receitas de pizzas.</p>
+        <div id="recipes-container"></div>
+    </main>
+
+    <div class="modal" id="recipe-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="" alt="" class="modal-image" id="modal-image">
+                <button class="modal-close" id="modal-close" type="button" aria-label="Fechar detalhes">&times;</button>
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <div class="modal-details">
+                    <p><strong>Tempo:</strong> <span id="modal-time"></span></p>
+                    <p><strong>Dificuldade:</strong> <span id="modal-difficulty"></span></p>
+                    <p><strong>Rendimento:</strong> <span id="modal-yield"></span></p>
+                </div>
+                <h3>Ingredientes</h3>
+                <ul id="modal-ingredients"></ul>
+                <h3>Modo de preparo</h3>
+                <ol id="modal-preparation"></ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
